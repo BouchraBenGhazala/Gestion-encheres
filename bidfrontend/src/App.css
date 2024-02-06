@@ -1,0 +1,965 @@
+nav {
+  border-bottom: 5px solid #DEB887;
+  /* background: #DEB887; */
+
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+  
+}
+
+
+.zoomed {
+  transform: scale(1.2); /* Vous pouvez ajuster le facteur de zoom selon vos besoins */
+}
+
+.bg-change {
+  background: #DEB887;
+  transition: background 0.7s ease-in-out;
+}
+
+nav .container-fluid {
+  margin-left: 6%;
+}
+
+nav .cd-signin,
+nav .cd-signup {
+  padding: 0.6em 1em;
+  border: 2px solid #DEB887;
+  background: #2f889a;
+  border-radius: 50em;
+  /* margin-right: 1%; */
+  font-weight: normal;
+  color: white;
+  transition: background 0.7s ease-in-out, color 0.6s ease-in-out;
+}
+.cd-signin2{
+  border: 2px solid #DEB887;
+  background: #2f889a;
+  border-radius: 3px;
+
+}
+
+nav .cd-signin:hover,
+nav .cd-signup:hover {
+  border: 2px solid #000000;
+  color: #000000;
+  background: none;
+  transition: background 0.7s ease-in-out, color 0.6s ease-in-out;
+}
+ .cd-signin,
+ .cd-signup {
+  padding: 0.6em 1em;
+  border: 2px solid #DEB887;
+  background: #2f889a;
+  border-radius: 50em;
+  /* margin-right: 1%; */
+  font-weight: normal;
+  color: white;
+  transition: background 0.7s ease-in-out, color 0.6s ease-in-out;
+}
+
+ .cd-signin:hover,
+ .cd-signup:hover {
+  border: 2px solid #000000;
+  color: #000000;
+  background: none;
+  transition: background 0.7s ease-in-out, color 0.6s ease-in-out;
+}
+
+.nav-link-underline,
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+/* .authenticate{
+  background-image: url('./dependecies/images/antique-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+body[makeback="yes"]{
+  background-image: url('./dependecies/images/antique-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.authenticate a {
+  text-decoration: none;
+  color: #DEB887;
+  transition: .5s ease;
+
+}
+
+.authenticate a:hover {
+  color: #DEB887;
+}
+
+.form {
+  background: #f7ede3;
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px #f7ede3;
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.authenticate li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(172, 166, 148, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+
+}
+
+.authenticate li:hover {
+  background: #1ab188;
+  color: white;
+}
+
+.authenticate .active a {
+  background: #DEB887;
+  color: white;
+}
+
+.tab-content>div:last-child {
+  display: none;
+}
+
+.authenticate h1 {
+  text-align: center;
+  color: #13232f;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.authenticate label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(21, 20, 20, 0.5);
+  transition: all 0.25s ease;
+  /* -webkit-backface-visibility: hidden; */
+  pointer-events: none;
+  font-size: 22px;
+
+}
+
+.authenticate label .req {
+  margin: 2px;
+  color: #DEB887;
+}
+
+.authenticate label.active{
+  transform: translateY(-25px);
+  left: 2px;
+  font-size: 14px;
+}
+
+.authenticate label.active .req {
+  opacity: 0;
+}
+
+.authenticate label.highlight {
+  color: black;
+}
+
+.authenticate input,
+.authenticate textarea, .authenticate .select{
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #DEB887;
+  color: black;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+
+}
+
+.authenticate input:focus,
+.authenticate textarea, .authenticate .select:focus{
+  outline: 0;
+  border: 3px solid #DEB887;
+}
+
+.authenticate .select option{
+  background: #DEB887;
+}
+/* .authenticate textarea, .authenticate .select {
+  border: 2px solid #DEB887;
+  resize: vertical;
+} */
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+.field-wrap2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.with-label {
+  margin-bottom: 1.5em; /* Ajustez selon votre mise en page */
+}
+
+.with-label label {
+  margin-bottom: 0.5em; /* Ajustez selon votre mise en page */
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.5em; /* Ajustez selon votre mise en page */
+  box-sizing: border-box;
+}
+
+
+.top-row>div {
+
+
+
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+
+
+}
+
+.top-row>div:last-child {
+  margin: 0;
+}
+
+.top-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #edd4b5;
+  color: white;
+  transition: all.5s ease;
+  /* -webkit-appearance: none; */
+
+}
+
+.button:hover,
+.button:focus {
+  background: #DEB887;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+/* Home */
+h1 {
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  align-items: center;
+}
+
+.SubTitreHome {
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+  align-items: center;
+  color: #DEB887;
+}
+
+.colr {
+  color: #DEB887;
+}
+
+.image-carousel2 {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.image-carousel2.active {
+  border-color: #DEB887; /* Highlight the active image */
+}
+
+.flex2 {
+  padding: 40px 20px;
+  background-color: rgb(244, 247, 249);
+}
+/* Responsive Styles */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .image-carousel2 {
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+@media (max-width: 820px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 8px;
+  }
+
+  .image-carousel2 {
+    width: 80px;
+    height: 80px;
+  }
+  .image-carousel {
+    width: 200px;
+    height: 200px;
+  }
+}
+.Titre1{
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.avis{
+  background-image: url('./dependecies/images/antique.jpg');
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.davis{
+  color: white;
+  text-align: center;
+}
+
+.Titre2{
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  color: white;
+}
+.avis-container {
+  border: 1px solid #ddd; /* Bordure légère */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 15px;
+  margin: 10px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out; /* Effet de transition lors du survol */
+}
+
+.avis-container:hover {
+  transform: scale(1.02); /* Effet d'agrandissement au survol */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px; /* Ajustez la taille de l'image */
+  height: 40px;
+  border-radius: 50%; /* Rendre l'image ronde */
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.avis-texte {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
+
+
+/*Card component*/
+.cadre {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  max-height: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre */
+  transition: box-shadow 0.3s ease; /* Transition pour l'effet hover */
+}
+
+.cadre:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Changement de l'ombre au survol */
+}
+
+.cadre-image {
+  width: 100%;
+  height: 200px;
+}
+
+.cadre-content {
+  padding: 20px;
+  background-color:  #DEB887;
+}
+
+.cadre-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cadre-prix {
+  color: #2f889a;
+  /*color: #DEB887;*/
+}
+
+.cadre-temps {
+  color: rgb(241, 58, 58);
+  font-size: 25px;
+  /*color: #13232f;*/
+}
+
+
+/*footer*/
+/* Footer.css */
+
+.footer-container {
+  background-image: url('https://e0.pxfuel.com/wallpapers/1011/675/desktop-wallpaper-continents-black-background-world-map-continents.jpg');
+  color: white;
+  background-position: center;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+.footer-section ul a {
+  list-style: none;
+  color: #DEB887;
+  padding: 0;
+  margin: 0;
+}
+.footer-section ul  {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-section ul li {
+  margin-bottom: 8px; 
+}
+
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;}            
+.bb2{
+  color: white;
+}
+.point{
+  font-size: 40px;
+  color: #2f889a;
+}
+
+.footer-section {
+  flex: 1; 
+  margin: 0 10px; 
+}
+
+.footer-bottom {
+  background-color: #000000;
+  width: 100%;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.74);
+  
+  /* Ajoutez une marge au-dessus pour séparer du reste du contenu */
+}
+
+
+
+
+
+
+
+/*cadre Infos */
+.nouveau-cadre-avec-image {
+  display: flex;
+}
+
+.cadre-image2 {
+  max-width: 60%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  padding:30px;
+  transform-origin: center center; /* Définit le point d'origine au centre de l'image */
+  margin: 20px; /* Ajoute un espace entre l'image et le cadre */
+}
+
+.nouveau-cadre {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.nouveau-cadre-gris {
+  background-color: #f0f0f0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.cadre-titre {
+  
+  inset: 0px 0px auto;
+    height: 40px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.cadre-titre h2 {
+  margin: 0;
+}
+
+.nouveau-cadre-blanc {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  flex: 1;
+  padding: 20px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.nouveau-cadre-contenu {
+  text-align: center;
+  color: gray;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  font-size: small;
+}
+.petit{
+  margin: 13px;
+  font-size: 25px;
+}
+.bgBlanc{
+  background-color: #fff;
+}
+.bb{
+  color: black;
+}
+
+.textCentrer{
+  text-align: center;
+  font-size: larger;
+}
+
+.nouveau-cadre-boutons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Met les boutons l'un en dessous de l'autre */
+  align-items: center; /* Centre les boutons horizontalement */
+}
+.nouveau-cadre-boutons button{
+  width: 200px;
+}
+
+.nouveau-cadre-info {
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nouveau-cadre-prix {
+  color: green;
+}
+
+.nouveau-cadre-temps {
+  color: blue;
+}
+
+
+
+/*tableau vendeur*/
+/* Ajoutez ces styles à votre fichier CSS ou utilisez des styles en ligne dans React */
+
+.seller-article-table-container {
+  text-align: center;
+}
+
+.seller-article-table {
+  width: 100%;
+  /* Ajoutez d'autres styles si nécessaire */
+}
+
+/* Styles pour les boutons */
+
+.delete-button,
+.edit-button {
+  margin: 0 8px; /* Espace entre les boutons */
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.delete-button {
+  color: red;
+  background-color: transparent;
+}
+
+.edit-button {
+  color: #2f889a;
+  background-color: transparent;
+}
+
+
+.seller-article-table-container {
+  margin: 20px;
+}
+
+.seller-article-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.seller-article-table th, .seller-article-table td {
+  border: 1px solid #DEB887;
+  padding: 8px;
+  text-align: left;
+}
+
+.seller-article-table th {
+  background-color: #DEB887;
+}
+
+.title h2{
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  color: #fff;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: hsl(205, 78%, 60%);
+  margin-left: auto;
+  margin-right: auto;
+}
+.Container {
+  width: 100%;
+  padding: 1%;
+}
+.review {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition:  all 0.3s linear;
+  text-align: center;
+  
+}
+.review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: hsl(205, 78%, 60%);
+  color: #fff;
+}
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: hsl(205, 78%, 60%);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+#author {
+  margin-bottom: 0.25rem;
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+}
+#info {
+  margin-bottom: 0.75rem;
+}
+.prev-btn,
+.next-btn {
+  color: hsl(205, 90%, 76%);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: hsl(205, 100%, 96%);
+  color: hsl(205, 78%, 60%);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  transition: all 0.3s linear;
+  border-color: hsl(205, 78%, 60%);
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: hsl(205, 78%, 60%);
+  color: hsl(205, 86%, 17%);
+}
+
+
+/*fotmulaire avis */
+.avis-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #DEB887;
+  display: flex;
+  flex-direction: column; /* Aligne les éléments en colonne par défaut */
+}
+
+.avis-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.avis-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Style facultatif pour mettre en surbrillance les champs requis */
+.avis-form input:required {
+  border-color: #ff6347;
+}
+
+
+.avis-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.avis-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+
+/* Style facultatif pour mettre en surbrillance les champs requis */
+.avis-form input:required {
+  border-color: #ff6347;
+}
+
+.recent::-webkit-scrollbar{
+  display: none;
+}
+
+
+.text-link-items {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ajustez selon vos besoins */
+  
+}
+
+.text-link-item {
+  /* width: calc(33.33% - 20px);  */
+  width: 40%;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #DEB887;
+  padding: 10px !important;
+  background-size: cover;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+.text-link-item:hover{
+  border: 5px solid #DEB887;
+}
+.back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+.authenticate + div {
+  /* background-image: url('../../../assets/ensamSchool.png'); */
+  /* background-size: cover; */
+  /* height: 100%; */
+  /* width: 100%; */
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 1;
+}
+.authenticate {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    /* background: rgba(255, 255, 255, 0.8); */
+    /* padding: 9.55%; */
+}
+
+.section-recent{
+  background: rgb(226, 235, 241);
+}
+.section-go{
+  margin-left: 50px;
+  margin-right: 50px;
+  background: rgb(226, 235, 241);
+  margin-bottom: 30px;
+}
